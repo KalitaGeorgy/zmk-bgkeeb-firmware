@@ -9,6 +9,16 @@ config ZMK_SPLIT_ROLE_CENTRAL
 
 endif
 
+if SHIELD_BGKEEB_RIGHT
+
+config SPI
+    default y
+
+config ZMK_POINTING
+    default y
+
+endif
+
 if SHIELD_BGKEEB_LEFT || SHIELD_BGKEEB_RIGHT
 
 config ZMK_SPLIT
